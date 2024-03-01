@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: aliceblue;
+        font-family: "Iceland", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+
+
+    body {
+        background-color: #e52a2a;
+    }
+
+    .innerMain,
+    .listing {
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    li {
+        font-size: 40px;
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+      
+        margin-bottom: 10px;
+        background-color: #f7990d;
+        position: relative;
+        border-radius: 2rem;
+       
+    }
+
+    span {
+
+        font-size: 40px;
+        position: absolute;
+        right: 1rem;
+    }
+
+    ul {
+        background-color: #95BFB8;
+        padding: 2rem;
+        width: 26rem;
+        
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+	/* margin-top:9rem; */
+    }
+
+    input {
+        height: 4rem;
+        width: 27rem;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 21px 0px #95BFB8;
+        font-size: 30px;
+        padding: 1rem;
+        color: #262223;
+        border-radius: 4rem;
+    }
+
+    .MAIN {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      
+    }
+
+    h2 {
+        /* margin-top: 10rem; */
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>TODO list</h1>
+        <div class="MAIN">
+
+            <div class="innerMain" id="display">
+                <h2>Enter Your Work</h2>
+                <div class="input" id="InputDisplay">
+                    <input type="text" name="" id="fruits" onkeyup="InputFunction(event)">
+                </div>
+                <div class="listing">
+                    <ul id="inputListing">
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
